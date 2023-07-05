@@ -10,7 +10,7 @@ This project based on [https://github.com/YouROK/TorrServer](https://github.com/
    <kbd>Settings</kbd> -> <kbd>Add-ons</kbd> -> <kbd>Add-on Store (Bottom Right)</kbd>.
 
 2. Click the 3-dots menu at upper right <kbd>...</kbd> > <kbd>Repositories</kbd>
-   and add this repository's URL: [https://github.com/aatrubilin/hassio-torrserver](https://github.com/aatrubilin/hassio-torrserver)
+   and add this repository's URL: [https://github.com/aatrubilin/hassio-torrserver](https://github.com/g470258/hassio-torrserver)
 
 3. Reload the page, scroll to the bottom to find the new repository,
    and click the new add-on named "TorrServer" (refresh the cache if it doesn't appear)
@@ -23,7 +23,7 @@ This project based on [https://github.com/YouROK/TorrServer](https://github.com/
 
 Got questions or problems?
 
-You can [open an issue here](https://github.com/aatrubilin/hassio-torrserver/issues) GitHub.
+You can [open an issue here](https://github.com/g470258/hassio-torrserver/issues) GitHub.
 Please keep in mind, that this software is only tested on amd64.
 
 ## Authors & contributors
