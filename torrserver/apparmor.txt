@@ -1,6 +1,6 @@
 #include <tunables/global>
 
-profile ADDON_SLUG flags=(attach_disconnected,mediate_deleted) {
+profile torrserver flags=(attach_disconnected,mediate_deleted) {
   #include <abstractions/base>
 
   # Capabilities
