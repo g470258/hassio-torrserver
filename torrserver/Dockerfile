@@ -7,6 +7,8 @@ RUN chmod a+x /run.sh
 
 # Setup base
 RUN apk add --no-cache \
+    nginx=1.24.0-r6 \
+    openssl=3.1.1-r1 \
     coreutils=9.3-r1 \
     wget=1.21.4-r0
 
