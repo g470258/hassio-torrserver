@@ -57,7 +57,7 @@ RUN \
 COPY ingress.conf /etc/nginx/http.d/
 
 #Launch nginx with debug options.
-CMD [ "nginx","-g" ] 
+CMD [ "nginx" ] 
 
 
 
