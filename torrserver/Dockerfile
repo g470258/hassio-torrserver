@@ -44,10 +44,7 @@ LABEL \
 RUN mkdir -p /share/torrserver
 WORKDIR /share/torrserver
 
-CMD [ "/run.sh" ]
-
 #Add nginx and create the run folder for nginx.
-
 RUN \
   apk --no-cache add \
     nginx \
@@ -59,3 +56,6 @@ COPY ingress.conf /etc/nginx/http.d/
 
 #Launch nginx with debug options.
 CMD [ "nginx","-g","daemon off;error_log /dev/stdout debug;" ]
+
+
+CMD [ "/run.sh" ]
