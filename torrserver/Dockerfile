@@ -57,7 +57,7 @@ COPY ingress.conf /etc/nginx/http.d/
 
 #Launch nginx with debug options.
 CMD [ "nginx","-g","daemon off;"error_log /dev/stdout debug; ] 
-#
+
 
 
 
