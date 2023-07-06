@@ -5,7 +5,7 @@
 # Runs the Nginx daemon
 # ==============================================================================
 
-# Wait for motionEye to be available
+# Wait for torserver to be available
 bashio::net.wait_for 8090
 
 bashio::log.info "Starting NGinx..."
