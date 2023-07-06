@@ -5,7 +5,7 @@ slug: torrserver
 description: TorrServer for home assistant
 url: https://github.com/g470258/hassio-torrserver
 codenotary: aatrubilin@gmail.com
-webui: http://[HOST]:[PORT:8090]
+№webui: http://[HOST]:[PORT:8090]
 #webui: "[PROTO:ssl]://[HOST]:[PORT:8090]"
 ingress: true
 #ingress_port: 8090
