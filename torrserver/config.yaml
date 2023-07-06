@@ -8,7 +8,7 @@ codenotary: aatrubilin@gmail.com
 #webui: http://[HOST]:[PORT:8090]
 #webui: "[PROTO:ssl]://[HOST]:[PORT:8090]"
 ingress: true
-ingress_port: 8090
+#ingress_port: 8090
 ingress_stream: true
 init: false
 auth_api: true
