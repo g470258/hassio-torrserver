@@ -43,6 +43,16 @@ LABEL \
     org.opencontainers.image.version=${BUILD_VERSION}
 
 RUN mkdir -p /share/torrserver
+RUN \
+  apk --no-cache add \
+    nginx \
+  \
+  && mkdir -p /run/nginx
+#Copy our conf into the nginx http.d folder.
+COPY ingress.conf /etc/nginx/http.d/
+
+#Launch nginx with debug options.
+CMD [ "nginx","-g","daemon off;error_log /dev/stdout debug;" ]
 WORKDIR /share/torrserver
 
 CMD [ "/run.sh" ]
