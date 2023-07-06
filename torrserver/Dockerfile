@@ -8,7 +8,11 @@ RUN chmod a+x /run.sh
 # Setup base
 RUN apk add --no-cache \
     coreutils=9.3-r1 \
-    wget=1.21.4-r0
+    wget=1.21.4-r0 \
+    nginx=1.24.0-r6 \
+    nodejs=18.16.1-r0 \
+    openssl=3.1.1-r1 \
+    yarn=1.22.19-r0 \
 
 # Build arguments
 ARG BUILD_ARCH
@@ -45,19 +49,6 @@ RUN mkdir -p /share/torrserver
 WORKDIR /share/torrserver
 
 
-
-#Add nginx and create the run folder for nginx.
-RUN \
-  apk --no-cache add \
-    nginx \
-  \
-  && mkdir -p /run/nginx
-
-#Copy our conf into the nginx http.d folder.
-COPY ingress.conf /etc/nginx/http.d/
-
-#Launch nginx with debug options.
-CMD [ "nginx","-g","daemon on;" ] 
 
 CMD [ "/run.sh" ]
 
