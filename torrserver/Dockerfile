@@ -44,12 +44,9 @@ LABEL \
 RUN mkdir -p /share/torrserver
 WORKDIR /share/torrserver
 
-
+CMD [ "/run.sh" ]
 
 #Add nginx and create the run folder for nginx.
-
-
-CMD [ "/run.sh" ]
 
 RUN \
   apk --no-cache add \
