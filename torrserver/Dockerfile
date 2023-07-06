@@ -43,6 +43,7 @@ LABEL \
     org.opencontainers.image.version=${BUILD_VERSION}
 RUN mkdir -p /share/torrserver
 WORKDIR /share/torrserver
+CMD [ "/run.sh" ]
 
 #Add nginx and create the run folder for nginx.
 RUN \
@@ -59,4 +60,4 @@ CMD [ "nginx","-g" ]
 #,"daemon off;"error_log /dev/stdout debug;
 
 
-CMD [ "/run.sh" ]
+
