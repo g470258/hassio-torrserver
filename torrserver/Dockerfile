@@ -12,7 +12,7 @@ RUN apk add --no-cache \
     nginx=1.24.0-r6 \
     nodejs=18.16.1-r0 \
     openssl=3.1.1-r1 \
-    yarn=1.22.19-r0 \
+
 
 # Build arguments
 ARG BUILD_ARCH
