@@ -11,7 +11,7 @@ RUN apk add --no-cache \
     wget=1.21.4-r0 \
     nginx=1.24.0-r6 \
     nodejs=18.16.1-r0 \
-    openssl=3.1.1-r1 \
+    openssl=3.1.1-r1 
 
 
 # Build arguments
