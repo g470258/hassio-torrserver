@@ -11,7 +11,7 @@ if [[ ! -f "$TS_RUNFILE" ]]
 then
 		rm -f TorrServer-*
 		echo "Downloading ${TS_SOURCE}-${TS_VERSION}..."
-		wget -O $TS_RUNFILE $TS_URL -v
+		wget -O $TS_RUNFILE $TS_URL 
 		chmod a+x $TS_RUNFILE
 fi
 
